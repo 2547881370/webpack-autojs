@@ -69,7 +69,7 @@ async function main() {
         // 使用正则表达式查找目标文字
         if (findTargetText(recognizedText, targetRegexes)) {
             toastLog("找到目标");
-            
+            media.playMusic(files.path("mp3/1.mp3"));
             // 显示弹框
             let confirmed = await showConfirmDialog("您有一笔充值订单，是否继续识别？");
             
